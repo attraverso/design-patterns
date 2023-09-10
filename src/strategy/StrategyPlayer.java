@@ -1,5 +1,9 @@
 package strategy;
 
+/*
+ * A basic terminal app with characters that have both common and particular behaviors.
+ * We want to display a character per type, and then have them all fight each other.
+ */
 public class StrategyPlayer {
     public void playPattern() {
         /*
@@ -17,7 +21,6 @@ public class StrategyPlayer {
 
         Character[] arr = {q, k, p, p2};
         for (Character c : arr) {
-            int numfldksjber = 0;
             c.fight();
         }
 
