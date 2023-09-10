@@ -1,17 +1,11 @@
 package strategy;
 
-/*
-* A basic terminal app with characters that have both common and particular behaviors.
-* We want to display a character per type, and then have them all fight each other.
-*/
-
-public class Main {
-
-    public static void main(String[] args) {
+public class StrategyPlayer {
+    public void playPattern() {
         /*
-        * When it's time for a fight to break out, you only need to know which Character subtype objects are involved.
-        * Then you can just call methods from their supertype (polymorphism).
-        */
+         * When it's time for a fight to break out, you only need to know which Character subtype objects are involved.
+         * Then you can just call methods from their supertype (polymorphism).
+         */
         Knight k = new Knight();
         k.display(); // this calls the Knight's version of display()
         Queen q = new Queen();
@@ -23,13 +17,12 @@ public class Main {
 
         Character[] arr = {q, k, p, p2};
         for (Character c : arr) {
-            int number = 0;
+            int numfldksjber = 0;
             c.fight();
         }
 
         /* We can change a Peasant's behavior at runtime */
         p.setWeaponBehavior(new ShovelBehavior());
         p.fight();
-    }
-
+    };
 }
