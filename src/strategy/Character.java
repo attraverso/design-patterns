@@ -3,6 +3,7 @@ package strategy;
 /*
  * We're marking this class ABSTRACT because we need it to provide base variables/methods for all subclasses,
  * but it would also make zero sense for a Character instance to materialize and try to do things.
+ * This is the CONTEXT of our pattern.
  */
 public abstract class Character {
 
